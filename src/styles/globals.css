@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Variáveis para cores */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F9FAF4;
+  --foreground: #150C1D;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #F9FAF4;
   }
 }
 
+/* Definindo a fonte padrão */
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Display";
 }
