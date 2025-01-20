@@ -7,7 +7,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
     <header
       className="bg-white text-black border-b border-black p-4"
       style={{ borderColor: "rgba(0, 0, 0, 0.1)" }}>
-      <h1>DraftMania Board</h1>
+      <h1 className="text-lg font-semibold px-2">DraftMania Board</h1>
     </header>
   );
 };

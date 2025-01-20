@@ -30,7 +30,7 @@ export const LeftMenu: React.FC<MenuProps> = ({ items }) => {
           <Timer isPlaying={true} />
         </div>
         {/* Players */}
-        <div className="flex flex-col pl-2 gap-5">
+        <div className="flex flex-col pl-2 gap-4">
           <h3 className="font-medium">Players</h3>
           {items.map((item, index) => (
             <div className="flex items-center gap-2 pl-2">

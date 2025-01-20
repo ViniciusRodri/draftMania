@@ -1,3 +1,4 @@
+import { Filtro } from "@/components/Filtro";
 import { Header } from "@/components/Header";
 import { LeftMenu } from "@/components/Menus/LeftMenu";
 import { RightMenu } from "@/components/Menus/RightMenu";
@@ -25,18 +26,15 @@ export default function Dashboard() {
 
   return (
     <div className="flex">
-      {/* Menu lateral esquerdo */}
       <LeftMenu items={menuItems} />
-
-      {/* Conteúdo principal */}
-      <div className="ml-[212px] w-full">
+      <div className="ml-[220px] w-full">
         <Header />
-        <main className="p-4">
-          <p>RONALDO</p>
+        <main>
+          <Filtro />
         </main>
       </div>
-
       <RightMenu />
+      
     </div>
   );
 }

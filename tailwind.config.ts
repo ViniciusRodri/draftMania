@@ -18,6 +18,7 @@ export default {
         white: "#F9FAF4",
         whiteLight: "#FFFFFF",
         gray: "#666666",
+        lightGray: "#f2f2f2",
       },
       fontFamily: {
         sans: ["Red Hat Display"],

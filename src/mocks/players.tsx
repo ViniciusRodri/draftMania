@@ -1,0 +1,123 @@
+// mockPlayers.js
+export const players = [
+  {
+    id: 1,
+    name: "Gabriel Barbosa",
+    team: "Flamengo",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/244275-1660003081.jpg?lm=1",
+  },
+  {
+    id: 2,
+    name: "Hulk",
+    team: "Atlético Mineiro",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/80562-1563436073.jpg?lm=1",
+  },
+  {
+    id: 3,
+    name: "Lucas Moura",
+    team: "São Paulo",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/77100-1654164113.jpg?lm=1",
+  },
+  {
+    id: 4,
+    name: "Dudu",
+    team: "Cruzeiro",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/114937-1483707641.jpg?lm=1",
+  },
+  {
+    id: 5,
+    name: "Pedro",
+    team: "Flamengo",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/432895-1668696996.jpg?lm=1",
+  },
+  {
+    id: 6,
+    name: "Calleri",
+    team: "São Paulo",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/284727-1583506567.jpg?lm=1",
+  },
+  {
+    id: 7,
+    name: "Ganso",
+    team: "Fluminense",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/67920-1462894569.jpg?lm=1",
+  },
+  {
+    id: 8,
+    name: "Marinho",
+    team: "Fortaleza",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/74758-1729175331.jpg?lm=1",
+  },
+  {
+    id: 9,
+    name: "Everton Ribeiro",
+    team: "Bahia",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/52896-1610006872.jpg?lm=1",
+  },
+  {
+    id: 10,
+    name: "Raphael Veiga",
+    team: "Palmeiras",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/432953-1706144797.jpg?lm=1",
+  },
+  {
+    id: 11,
+    name: "Arrascaeta",
+    team: "Flamengo",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/248410-1668501457.jpg?lm=1",
+  },
+  {
+    id: 12,
+    name: "Gustavo Gomez",
+    team: "Palmeiras",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/215390-1687967123.jpg?lm=1",
+  },
+  {
+    id: 13,
+    name: "Felipe Anderson",
+    team: "Palmeiras",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/159372-1692963183.jpg?lm=1",
+  },
+  {
+    id: 14,
+    name: "Luciano",
+    team: "São Paulo",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/223560-1490622723.jpg?lm=1",
+  },
+  {
+    id: 15,
+    name: "Yuri Alberto",
+    team: "Corinthians",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/489893-1720056861.jpg?lm=1",
+  },
+  {
+    id: 16,
+    name: "Memphis Depay",
+    team: "Corinthians",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/167850-1668167349.jpg?lm=1",
+  },
+  {
+    id: 17,
+    name: "Wellington Rato",
+    team: "Vitória",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/542483-1656980162.jpg?lm=1",
+  },
+  {
+    id: 18,
+    name: "Germán Cano",
+    team: "Fluminense",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/54590-1701505203.jpg?lm=1",
+  },
+  {
+    id: 19,
+    name: "Tiquinho Soares",
+    team: "Santos",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/103381-1542106367.png?lm=1",
+  },
+  {
+    id: 20,
+    name: "Fábio",
+    team: "Fluminense",
+    photo: "https://img.a.transfermarkt.technology/portrait/header/22415-1674434950.jpg?lm=1",
+  },
+];
