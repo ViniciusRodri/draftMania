@@ -48,24 +48,46 @@ export const RightMenu: React.FC<MenuProps> = ({}) => {
               className="w-2 h-2 rounded-full"
             />
           </div>
-          <div className="pl-2">
-            <div className="flex flex-col py-2 px-2">
+
+          <div className="flex flex-col pl-2">
+            <div className="flex items-center gap-2 py-2 px-2">
+              <div>
+                <Image
+                  src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
+                  alt="São Paulo"
+                  objectFit="cover"
+                  objectPosition="center"
+                  width={30}
+                  height={30}
+                />
+              </div>
+              <div>
               <p className="text-base text-black font-medium">
                 You fixed a bug.
               </p>
               <p className="text-sm text-gray">VjacksonS</p>
+
+              </div>
             </div>
-            <div className="flex flex-col py-2 px-2">
-              <p className="text-base text-black font-medium">
-                New user registered.
-              </p>
-              <p className="text-sm text-gray">GuiBorges</p>
-            </div>
-            <div className="flex flex-col py-2 px-2">
+           
+            <div className="flex items-center gap-2 py-2 px-2">
+              <div>
+                <Image
+                  src="https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg"
+                  alt="São Paulo"
+                  objectFit="cover"
+                  objectPosition="center"
+                  width={30}
+                  height={30}
+                />
+              </div>
+              <div>
               <p className="text-base text-black font-medium">
                 You fixed a bug.
               </p>
-              <p className="text-sm text-gray">oestagiario</p>
+              <p className="text-sm text-gray">VjacksonS</p>
+
+              </div>
             </div>
           </div>
         </div>
