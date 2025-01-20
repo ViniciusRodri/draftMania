@@ -15,7 +15,7 @@ export const Modal: React.FC<ModalProps> = ({ stepsContent }) => {
 
   const handleRedirect = () => {
     closeModal();
-    router.push('/nova-pagina'); 
+    router.push('/dashboard'); 
   };
 
   const StepComponent = stepsContent[currentStep];
@@ -37,7 +37,7 @@ export const Modal: React.FC<ModalProps> = ({ stepsContent }) => {
           {currentStep < totalSteps - 1 ? (
             <MainButton bgColor='bg-orange' onClick={nextStep} text="Próximo"/>
           ) : (
-            <MainButton bgColor='bg-orange' onClick={handleRedirect} text="Finalizar"/>
+            <MainButton bgColor='bg-orange' onClick={handleRedirect} text="Jogar"/>
           )}
         </div>
       </div>
