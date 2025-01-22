@@ -27,14 +27,13 @@ export default function Dashboard() {
   return (
     <div className="flex">
       <LeftMenu items={menuItems} />
-      <div className="mx-[220px] w-full">
+
+      <main className="mx-[220px] w-full">
         <Header />
-        <main>
-          <Filtro />
-        </main>
-      </div>
+        <Filtro />
+      </main>
+
       <RightMenu />
-      
     </div>
   );
 }

@@ -24,6 +24,9 @@ export default {
       fontFamily: {
         sans: ["Red Hat Display"],
       },
+      gridTemplateColumns: {
+        "players": "repeat(5, 300px)",
+      },
     },
   },
   plugins: [],

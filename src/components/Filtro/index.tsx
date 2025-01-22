@@ -15,7 +15,7 @@ export const Filtro: React.FC<FiltroProps> = ({}) => {
   };
 
   return (
-    <div className="bg-white ">
+    <div className="bg-white flex flex-col">
       <div className="flex flex-col gap-3 p-4">
         <h3 className="text-black font-semibold text-lg">Overview</h3>
         <SearchInput />
@@ -54,9 +54,9 @@ export const Filtro: React.FC<FiltroProps> = ({}) => {
           />
         </div>
       </div>
-      <div>
-        <Players />
-      </div>
+
+      <Players />
+
       <footer className="flex items-center justify-center">
         <p className="text-gray font-semibold">VERSÃO BETA</p>
       </footer>
