@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     RAPIDAPI_KEY: process.env.RAPIDAPI_KEY, 
   },
   images: {
-    domains: ['img.a.transfermarkt.technology'], 
+    domains: ['img.a.transfermarkt.technology', 's2-ge.glbimg.com'], 
   },
 };
 

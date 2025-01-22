@@ -1,49 +1,46 @@
-// pages/index.tsx
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { CardPlayer } from "../Cards/CardPlayer";
 import { players } from "@/mocks/players";
+import { ModalPlayers } from "../Modals/ModalPlayers";
 
-type Player = {
+export type Player = {
   id: number;
   name: string;
   team: string;
   photo: string;
+  position: string;
 };
 
 export const Players: React.FC = ({}) => {
-  // const [players, setPlayers] = useState<Player[]>([]);
-  // const [loading, setLoading] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
 
-  // useEffect(() => {
-  //   const fetchPlayers = async () => {
-  //     try {
-  //       const response = await axios.get("/api/players");
-  //       setPlayers(response.data);
-  //     } catch (error) {
-  //       console.error("Erro ao buscar jogadores:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchPlayers();
-  // }, []);
-
-  // if (loading) {
-  //   return <p>Carregando jogadores...</p>;
-  // }
+  const handleCardClick = (player: Player) => {
+    setOpenModal(true);
+    setSelectedPlayer(player);
+  };
 
   return (
-    <div className="p-10 grid grid-cols-4 gap-6 overflow-hidden">
-      {players.map((player) => (
-        <CardPlayer
-          key={player.id}
-          name={player.name}
-          image={player.photo}
-          team={player.team}
+    <>
+      <div className="m-4 h-[750px] rounded-lg grid grid-cols-4 wrap gap-2 overflow-auto">
+        {players.map((player) => (
+          <CardPlayer
+            key={player.id}
+            name={player.name}
+            image={player.photo}
+            team={player.team}
+            position={player.position}
+            onclick={() => handleCardClick(player)}
+          />
+        ))}
+      </div>
+      {openModal && selectedPlayer && (
+        <ModalPlayers
+          closeModal={() => setOpenModal(false)}
+          player={selectedPlayer} // Passa o jogador selecionado para o modal
         />
-      ))}
-    </div>
+      )}
+    </>
   );
-}
+};

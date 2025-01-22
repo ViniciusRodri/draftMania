@@ -1,36 +1,44 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import { Player } from "../Players";
 
 type CardProps = {
   name: string;
   image: string;
   team: string;
+  position: string;
+  onclick: () => void;
 };
 
-export const CardPlayer: React.FC<CardProps> = ({ name, image, team }) => {
-  const [isSelected, setIsSelected] = useState(false);
-
-  const handleCardClick = () => {
-    setIsSelected(!isSelected);
-  };
-
+export const CardPlayer: React.FC<CardProps> = ({
+  name,
+  image,
+  team,
+  position,
+  onclick,
+}) => {
   return (
     <div
-      onClick={handleCardClick}
-      className={`flex flex-col items-center justify-center rounded-xl bg-white border-4 p-4 shadow-md w-[162px] h-[125px] cursor-pointer ${
-        isSelected ? "border-blue" : ""
-      }`}>
+      onClick={onclick}
+      className={`relative w-[300px] h-[300px] flex flex-col items-center justify-center m-auto rounded-2xl overflow-hidden`}>
       <Image
         src={image}
         alt={name}
+        layout="fill"
         objectFit="cover"
         objectPosition="center"
-        width={45}
-        height={58}
-        className="rounded-2xl"
+        className="absolute inset-0 z-0 rounded-2xl"
       />
-      <h2 className="text-base text-black font-semibold">{name}</h2>
-      <p className="text-sm text-black font-medium">{team}</p>
+
+      <div className="absolute inset-0 bg-black opacity-30 z-5 rounded-2xl"></div>
+
+      <div className="absolute text-center z-10">
+        <h2 className="text-lg text-white font-bold">
+          {name.toLocaleUpperCase()}
+        </h2>
+        <p className="text-base text-white font-semibold">{position}</p>
+        <p className="text-base text-white font-regular">{team}</p>
+      </div>
     </div>
   );
 };

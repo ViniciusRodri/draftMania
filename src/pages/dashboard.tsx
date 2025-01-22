@@ -27,7 +27,7 @@ export default function Dashboard() {
   return (
     <div className="flex">
       <LeftMenu items={menuItems} />
-      <div className="ml-[220px] w-full">
+      <div className="mx-[220px] w-full">
         <Header />
         <main>
           <Filtro />
