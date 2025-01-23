@@ -57,8 +57,8 @@ export const Filtro: React.FC<FiltroProps> = ({}) => {
 
       <Players />
 
-      <footer className="flex items-center justify-center">
-        <p className="text-gray font-semibold">VERSÃO BETA</p>
+      <footer className="flex items-center justify-center py-4">
+        <p className="text-gray font-semibold italic">VERSÃO BETA</p>
       </footer>
     </div>
   );

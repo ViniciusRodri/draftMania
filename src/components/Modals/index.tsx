@@ -4,7 +4,7 @@ import { useModal } from '@/hooks/useModal';
 import { MainButton } from '../Button/MainButton';
 
 type ModalProps = {
-  stepsContent: React.FC[];
+  stepsContent: React.ReactElement[];
 };
 
 export const Modal: React.FC<ModalProps> = ({ stepsContent }) => {
@@ -31,7 +31,7 @@ export const Modal: React.FC<ModalProps> = ({ stepsContent }) => {
         </button> */}
         {/* <div>{stepsContent[currentStep]}</div> */}
         <div className="items-center justify-center">
-          {StepComponent && <StepComponent />} 
+        {stepsContent[currentStep]}
         </div>
         <div className="flex justify-center items-center mt-4">
           {currentStep < totalSteps - 1 ? (

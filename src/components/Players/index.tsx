@@ -23,7 +23,7 @@ export const Players: React.FC = ({}) => {
 
   return (
     <>
-      <div className="p-4 rounded-lg grid grid-cols-players items-baseline justify-center gap-2 overflow-auto">
+      <div className="p-4 rounded-lg grid grid-cols-players md:grid-cols-players-md sm:grid-cols-players-sm items-baseline justify-center gap-2 overflow-auto">
         {players.map((player) => (
           <CardPlayer
             key={player.id}

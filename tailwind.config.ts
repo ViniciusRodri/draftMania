@@ -26,6 +26,8 @@ export default {
       },
       gridTemplateColumns: {
         "players": "repeat(5, 300px)",
+        "players-md": "repeat(4, 300px)",
+        "players-sm": "repeat(1, 200px)",
       },
     },
   },
